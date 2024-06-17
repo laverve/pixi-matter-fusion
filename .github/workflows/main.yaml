@@ -16,14 +16,6 @@ env:
 jobs:
     test:
         runs-on: ubuntu-latest
-
-        strategy:
-            fail-fast: false
-            matrix:
-                node-version: [18.x]
-                ci_index: [0, 1, 2, 3]
-                ci_total: [4]
-
         steps:
             - uses: actions/checkout@v3
             - name: Use Node.js ${{ matrix.node-version }}
