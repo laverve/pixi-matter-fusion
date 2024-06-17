@@ -1,4 +1,4 @@
-[![Release Train](https://github.com/laverve/games/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/laverve/games/actions/workflows/main.yaml)
+[![Release Train](https://github.com/laverve/pixi-matter-fusion/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/laverve/pixi-matter-fusion/actions/workflows/main.yaml)
 
 # @laverve/pixi-matter-fusion - The lightweight Game Engine
 
