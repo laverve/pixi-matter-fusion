@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useTimer } from "@laverve/pixi-matter-fusion";
+import { useTimer } from "@laverve/fusion";
 import { Timer } from "@laverve/timer";
 
 export const MazeSidebar: React.FC = () => {

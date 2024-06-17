@@ -2,7 +2,7 @@ import React, { useState, TouchEvent, MouseEvent, useContext, useEffect, useRef,
 import classnames from "classnames";
 import { v4 as uuid } from "uuid";
 import { parseToRgba, toHex } from "color2k";
-import { GameContext, GameStatus } from "@laverve/pixi-matter-fusion";
+import { GameContext, GameStatus } from "@laverve/fusion";
 import { WordSearchContext } from "./WordSearch.context";
 import { generatePath } from "./lib/path";
 

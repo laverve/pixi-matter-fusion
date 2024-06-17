@@ -1,7 +1,7 @@
 {
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "bugs": {
-        "url": "https://github.com/laverve/pixi-matter-fusion/issues"
+        "url": "https://github.com/laverve/fusion/issues"
     },
     "dependencies": {
         "classnames": "^2.3.2"

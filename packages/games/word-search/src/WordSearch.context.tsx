@@ -1,7 +1,7 @@
 import React, { createContext, PropsWithChildren, useContext, useEffect, useMemo, useState } from "react";
 
 import { v4 as uuid } from "uuid";
-import { GameContext, GameStatus } from "@laverve/pixi-matter-fusion";
+import { GameContext, GameStatus } from "@laverve/fusion";
 import { WordSearchBoardCell } from "./types";
 
 export type WordFoundEvent = { word: string; foundWords: string[] };

@@ -1,13 +1,13 @@
 {
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "bugs": {
-        "url": "https://github.com/laverve/pixi-matter-fusion/issues"
+        "url": "https://github.com/laverve/fusion/issues"
     },
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^6.4.2",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@laverve/design-provider": "^1.0.0",
-        "@laverve/pixi-matter-fusion": "^1.0.0",
+        "@laverve/fusion": "^1.0.0",
         "@laverve/game-layout": "^1.0.0",
         "@laverve/i18n-provider": "^1.0.0",
         "@laverve/timer": "^1.0.0",
