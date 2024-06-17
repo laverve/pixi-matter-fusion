@@ -1,0 +1,63 @@
+{
+    "author": "Victor Pishuk <victor.pishuk@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/laverve/games/issues"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.4.2",
+        "@fortawesome/free-brands-svg-icons": "^6.4.2",
+        "@fortawesome/free-regular-svg-icons": "^6.4.2",
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@nextui-org/react": "^2.1.13",
+        "color2k": "^2.0.2",
+        "framer-motion": "^10.16.4",
+        "postcss": "^8.4.30",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-loader": "^7.3.3",
+        "postcss-preset-env": "^9.1.4",
+        "tailwindcss": "^3.3.3"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0"
+    },
+    "description": "This module offers a set of components needed to apply common styling principles and components.",
+    "keywords": [
+        "design provider",
+        "nextui",
+        "postcss",
+        "tailwind",
+        "react",
+        "LaVerve"
+    ],
+    "license": "MIT",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "name": "@laverve/design-provider",
+    "repository": {
+        "type": "git",
+        "url": "git:https://github.com/laverve/games.git"
+    },
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "files": [
+        "./dist/src/",
+        "./src/",
+        "package.json",
+        "package-lock.json",
+        "postcss.config.js",
+        "tailwind.config.js",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "lint": "eslint --ext .js,.ts,.tsx,.json . ",
+        "lint:staged": "lint-staged",
+        "test": "jest --passWithNoTests",
+        "copy-assets": "copyfiles -u 1 src/**/*.txt src/**/*.ttf src/**/*.otf src/**/*.css dist/src/",
+        "build": "tsc && npm run copy-assets"
+    },
+    "version": "1.0.0",
+    "webpack": "./src/index.ts"
+}

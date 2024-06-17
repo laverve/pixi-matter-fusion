@@ -1,0 +1,63 @@
+name: Release Train
+
+on:
+    push:
+        branches: ["main"]
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+env:
+    TARGET_ENVIRONMENT: production
+    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [18.x]
+                ci_index: [0, 1, 2, 3]
+                ci_total: [4]
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "npm"
+            - uses: ./.github/actions/install
+            - uses: ./.github/actions/build
+            - uses: ./.github/actions/lint
+            - uses: ./.github/actions/test
+              with:
+                  chunk_index: ${{ matrix.ci_index }}
+                  chunk_total: ${{ matrix.ci_total }}
+
+    publish:
+        runs-on: ubuntu-latest
+
+        permissions:
+            pages: write # to deploy to Pages
+            id-token: write
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        needs: [test]
+
+        steps:
+            - name: Deploy artifact to GitHub Pages
+              uses: actions/deploy-pages@v2
+              with:
+                  artifact_name: github-artifact

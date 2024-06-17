@@ -1,0 +1,23 @@
+{
+    "controls": {
+        "kudos": {
+            "motivationalMessage": "Продовжуй тренуватися, щоб стати кращим!",
+            "subtitle": "Головоломка опанована!",
+            "title": "Вітання!"
+        },
+        "playAgainButton": "Спробувати ще",
+        "startButton": "Грати",
+        "stats": {
+            "gatheredResources": "Зібрані ресурси:",
+            "minutes": "хв.",
+            "seconds": "сек.",
+            "timeSpent": "Витрачено часу:",
+            "title": "Твої досягнення"
+        },
+        "timesup": {
+            "motivationalMessage": "Спробуй ще раз і продовжуй вдосконалюватися!",
+            "subtitle": "Не хвилюйся, практика це шлях до досконалості.",
+            "title": "Час вишой!"
+        }
+    }
+}

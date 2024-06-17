@@ -1,0 +1,32 @@
+name: CI
+
+on:
+    pull_request:
+        branches: ["main"]
+
+env:
+    TARGET_ENVIRONMENT: production
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [18.x]
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "npm"
+            - uses: ./.github/actions/install
+            - uses: ./.github/actions/build
+            - uses: ./.github/actions/lint
+            - uses: ./.github/actions/test
+              with:
+                  chunk_index: 0
+                  chunk_total: 1

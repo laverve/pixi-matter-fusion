@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WordSearchWordsList should render all words as unselected 1`] = `
+<DocumentFragment>
+  <div
+    data-overlay-container="true"
+  >
+    <button
+      data-testid="test-on-word-found"
+      type="button"
+    >
+      Find word
+    </button>
+    <div
+      class="box-border justify-center items-center flex-1 gap-1"
+      data-testid="testid-wordsearch-words-list"
+    >
+      <div
+        class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+        data-testid="testid-dog"
+      >
+        <span
+          class="flex-1 text-inherit font-normal px-2"
+        >
+          <span
+            class=""
+          >
+            dog
+          </span>
+        </span>
+      </div>
+      <div
+        class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+        data-testid="testid-cat"
+      >
+        <span
+          class="flex-1 text-inherit font-normal px-2"
+        >
+          <span
+            class=""
+          >
+            cat
+          </span>
+        </span>
+      </div>
+      <div
+        class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+        data-testid="testid-dig"
+      >
+        <span
+          class="flex-1 text-inherit font-normal px-2"
+        >
+          <span
+            class=""
+          >
+            dig
+          </span>
+        </span>
+      </div>
+      <div
+        class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+        data-testid="testid-boat"
+      >
+        <span
+          class="flex-1 text-inherit font-normal px-2"
+        >
+          <span
+            class=""
+          >
+            boat
+          </span>
+        </span>
+      </div>
+      <div
+        class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+        data-testid="testid-doc"
+      >
+        <span
+          class="flex-1 text-inherit font-normal px-2"
+        >
+          <span
+            class=""
+          >
+            doc
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`WordSearchWordsList should render selected words as selected 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -27,16 +27,17 @@
+          </span>
+        </div>
+        <div
+          class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+          data-testid="testid-cat"
++         style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"
+        >
+          <span
+            class="flex-1 text-inherit font-normal px-2"
+          >
+            <span
+-             class=""
++             class="line-through"
+            >
+              cat
+            </span>
+          </span>
+        </div>"
+`;
+
+exports[`WordSearchWordsList should use color without alpha channel to hightlight selected word 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -27,16 +27,17 @@
+          </span>
+        </div>
+        <div
+          class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full bg-default text-default-foreground m-1"
+          data-testid="testid-cat"
++         style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"
+        >
+          <span
+            class="flex-1 text-inherit font-normal px-2"
+          >
+            <span
+-             class=""
++             class="line-through"
+            >
+              cat
+            </span>
+          </span>
+        </div>"
+`;

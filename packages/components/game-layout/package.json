@@ -1,0 +1,42 @@
+{
+    "author": "Victor Pishuk <victor.pishuk@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/laverve/games/issues"
+    },
+    "description": "This module offers layout component to organize a gameplay.",
+    "keywords": [
+        "game",
+        "react"
+    ],
+    "license": "MIT",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "name": "@laverve/game-layout",
+    "files": [
+        "./dist/src/",
+        "./src/",
+        "package.json",
+        "package-lock.json",
+        "README.md",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git:https://github.com/laverve/games.git"
+    },
+    "scripts": {
+        "lint": "eslint --ext .js,.ts,.tsx,.json .",
+        "lint:staged": "lint-staged",
+        "test": "jest --passWithNoTests",
+        "build": "tsc"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^3.3.3",
+        "react": "^18.2.0"
+    },
+    "version": "1.0.0",
+    "webpack": "./src/index.ts"
+}

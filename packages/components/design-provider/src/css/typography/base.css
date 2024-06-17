@@ -1,0 +1,19 @@
+h1 {
+  @apply font-primary text-2xl font-bold md:text-3xl;
+}
+
+h2 {
+  @apply font-primary text-xl font-bold md:text-2xl;
+}
+
+h3 {
+  @apply font-primary text-lg font-bold md:text-xl;
+}
+
+h4 {
+  @apply font-primary text-base font-bold md:text-lg;
+}
+
+body {
+  @apply font-primary text-sm md:text-base;
+}

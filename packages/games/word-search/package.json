@@ -1,0 +1,53 @@
+{
+    "author": "Victor Pishuk <victor.pishuk@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/laverve/games/issues"
+    },
+    "dependencies": {
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@nextui-org/react": "^2.1.13",
+        "@laverve/design-provider": "^1.0.0",
+        "@laverve/game-layout": "^1.0.0",
+        "@laverve/pixi-matter-fusion": "^1.0.0",
+        "@laverve/i18n-provider": "^1.0.0",
+        "@laverve/timer": "^1.0.0",
+        "classnames": "^2.3.2",
+        "color2k": "^2.0.2",
+        "react": "^18.2.0",
+        "react-i18next": "13.5.0",
+        "uuid": "^9.0.1"
+    },
+    "description": "This module offers a set of components needed to configure and play WordSearch game.",
+    "keywords": [
+        "game",
+        "word search"
+    ],
+    "license": "MIT",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "files": [
+        "./dist/src/",
+        "./src/",
+        "package.json",
+        "package-lock.json",
+        "README.md",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "name": "@laverve/word-search-game",
+    "repository": {
+        "type": "git",
+        "url": "git:https://github.com/laverve/games.git"
+    },
+    "scripts": {
+        "lint": "eslint --ext .js,.ts,.tsx,.json .",
+        "lint:staged": "lint-staged",
+        "test": "jest --passWithNoTests",
+        "build": "tsc"
+    },
+    "version": "1.0.0",
+    "webpack": "./src/index.tsx"
+}

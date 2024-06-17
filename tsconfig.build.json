@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": ".",
+        "composite": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "jsx": "react",
+        "module": "commonjs",
+        "outDir": "./dist/",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2021"
+    },
+    "exclude": ["**/*.test.ts", "**/*.stub.ts", "node_modules", "dist"],
+    "references": [
+        {
+            "path": "./packages/utils/test"
+        },
+        {
+            "path": "./packages/utils/i18n-provider"
+        },
+        {
+            "path": "./packages/components/timer"
+        },
+        {
+            "path": "./packages/components/game-engine"
+        },
+        {
+            "path": "./packages/components/design-provider"
+        },
+        {
+            "path": "./packages/games/maze"
+        },
+        {
+            "path": "./packages/games/wordsearch"
+        }
+    ]
+}
