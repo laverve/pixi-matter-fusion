@@ -10,7 +10,7 @@ import snapshotDiff from "snapshot-diff";
 
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import { LaverveCoreDesignProvider } from "@laverve/design-provider";
-import { GameContextProvider, GameContext } from "@laverve/pixi-matter-fusion";
+import { GameContextProvider, GameContext } from "@laverve/fusion";
 
 import { WordSearchContextProvider } from "./WordSearch.context";
 import { WordSearchBoard, WordSearchBoardProps } from "./WordSearchBoard";

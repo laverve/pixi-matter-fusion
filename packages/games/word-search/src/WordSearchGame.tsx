@@ -1,6 +1,6 @@
 import React from "react";
 
-import { GameContextProvider, GameContextProviderProps } from "@laverve/pixi-matter-fusion";
+import { GameContextProvider, GameContextProviderProps } from "@laverve/fusion";
 import { GameLayout, GameLayoutProps } from "@laverve/game-layout";
 import {
     WordSearchContextValue,

@@ -4,7 +4,7 @@ import {
     GameObjectDisplayObjectConfig,
     useDisplayObjectFromConfig,
     useDisplayObjectsFromConfig
-} from "@laverve/pixi-matter-fusion";
+} from "@laverve/fusion";
 import { MazeAssets } from "./types";
 import { MazeContext } from "./Maze.context";
 import { getCellAsset } from "./helpers/getCellAsset";

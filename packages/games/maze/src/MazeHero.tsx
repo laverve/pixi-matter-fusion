@@ -5,7 +5,7 @@ import {
     GameStatus,
     useDisplayObjectFromConfig,
     useGlobalEventHandler
-} from "@laverve/pixi-matter-fusion";
+} from "@laverve/fusion";
 import { MazeContext } from "./Maze.context";
 
 export type MazeHeroProps = {};

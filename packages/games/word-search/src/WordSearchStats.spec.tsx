@@ -8,7 +8,7 @@ import React, { useContext, useState } from "react";
 
 import { render, fireEvent } from "@testing-library/react";
 import { LaverveCoreDesignProvider } from "@laverve/design-provider";
-import { GameContextProvider, GameContext } from "@laverve/pixi-matter-fusion";
+import { GameContextProvider, GameContext } from "@laverve/fusion";
 
 import { WordSearchContextProvider, WordSearchContext } from "./WordSearch.context";
 import { WordSearchStats, WordSearchStatsProps } from "./WordSearchStats";

@@ -1,9 +1,5 @@
 import React, { useContext, useMemo } from "react";
-import {
-    DisplayObjectType,
-    GameObjectDisplayObjectConfig,
-    useDisplayObjectsFromConfig
-} from "@laverve/pixi-matter-fusion";
+import { DisplayObjectType, GameObjectDisplayObjectConfig, useDisplayObjectsFromConfig } from "@laverve/fusion";
 import { MazeContext } from "./Maze.context";
 
 export const MazePredators: React.FC = () => {

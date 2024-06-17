@@ -1,4 +1,4 @@
-import { GameContext, GameStatus } from "@laverve/pixi-matter-fusion";
+import { GameContext, GameStatus } from "@laverve/fusion";
 import React, {
     createContext,
     PropsWithChildren,

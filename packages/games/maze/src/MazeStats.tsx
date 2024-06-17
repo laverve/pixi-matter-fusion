@@ -3,7 +3,7 @@ import classnames from "classnames";
 import { useTranslation } from "react-i18next";
 import { Typography } from "@laverve/design-provider";
 
-import { GameContext } from "@laverve/pixi-matter-fusion";
+import { GameContext } from "@laverve/fusion";
 import { MazeContext } from "./Maze.context";
 import { I18N_NAMESPACE } from "./types";
 

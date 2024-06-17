@@ -1,11 +1,6 @@
 import React, { useMemo } from "react";
 
-import {
-    GameContextProvider,
-    GameContextProviderProps,
-    StageContextProvider,
-    StageConfig
-} from "@laverve/pixi-matter-fusion";
+import { GameContextProvider, GameContextProviderProps, StageContextProvider, StageConfig } from "@laverve/fusion";
 import { GameLayout, GameLayoutProps } from "@laverve/game-layout";
 import { MazeContextValue, MazeContextProvider, MazeContextProviderProps } from "./Maze.context";
 import { MazeBoard, MazeBoardProps } from "./MazeBoard";

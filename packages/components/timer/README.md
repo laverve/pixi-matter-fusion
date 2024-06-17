@@ -66,7 +66,7 @@ Use this property to display how much time does user still have to complete the 
 <<<<<<< Updated upstream
 =======
 [ ] - Split timer component into view and a hook to make it possible to use separately
-[ ] - Make timer component independent of `@laverve/pixi-matter-fusion`
+[ ] - Make timer component independent of `@laverve/fusion`
 [ ] - Add tests
 >>>>>>> Stashed changes
 

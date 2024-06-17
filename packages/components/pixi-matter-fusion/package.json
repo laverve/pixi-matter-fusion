@@ -1,7 +1,7 @@
 {
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "bugs": {
-        "url": "https://github.com/laverve/pixi-matter-fusion/issues"
+        "url": "https://github.com/laverve/fusion/issues"
     },
     "dependencies": {
         "@types/matter-js": "^0.19.2",
@@ -22,7 +22,7 @@
     "license": "MIT",
     "main": "./dist/src/index.js",
     "types": "./dist/src/index.d.ts",
-    "name": "@laverve/pixi-matter-fusion",
+    "name": "@laverve/fusion",
     "files": [
         "./dist/src/",
         "./src/",

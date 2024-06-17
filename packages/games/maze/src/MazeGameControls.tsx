@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faArrowRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
 
-import { GameContext, GameStatus } from "@laverve/pixi-matter-fusion";
+import { GameContext, GameStatus } from "@laverve/fusion";
 import { I18N_NAMESPACE } from "./types";
 
 export type MazeGameControlsProps = {

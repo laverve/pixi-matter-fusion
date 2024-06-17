@@ -1,4 +1,4 @@
-# @laverve/pixi-matter-fusion
+# @laverve/fusion
 
 This module provides a component to organizae layout of a game.
 

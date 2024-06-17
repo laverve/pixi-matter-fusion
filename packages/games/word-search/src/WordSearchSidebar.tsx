@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Timer } from "@laverve/timer";
-import { useTimer } from "@laverve/pixi-matter-fusion";
+import { useTimer } from "@laverve/fusion";
 import { WordSearchWordsList, WordSearchWordsListProps } from "./WordSearchWordsList";
 
 export type WordSearchSidebarProps = {
