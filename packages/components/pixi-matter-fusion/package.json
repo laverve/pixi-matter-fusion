@@ -1,7 +1,7 @@
 {
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "bugs": {
-        "url": "https://github.com/laverve/games/issues"
+        "url": "https://github.com/laverve/pixi-matter-fusion/issues"
     },
     "dependencies": {
         "@types/matter-js": "^0.19.2",

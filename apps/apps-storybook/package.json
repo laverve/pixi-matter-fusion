@@ -1,7 +1,7 @@
 {
     "author": "Victor Pishuk <victor.pishuk@gmail.com>",
     "bugs": {
-        "url": "https://github.com/laverve/games/issues"
+        "url": "https://github.com/laverve/pixi-matter-fusion/issues"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.2",
