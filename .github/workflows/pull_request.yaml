@@ -4,9 +4,6 @@ on:
     pull_request:
         branches: ["main"]
 
-env:
-    TARGET_ENVIRONMENT: production
-
 jobs:
     test:
         runs-on: ubuntu-latest
