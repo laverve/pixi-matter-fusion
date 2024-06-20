@@ -10,12 +10,16 @@ permissions:
     id-token: write
 
 env:
-    TARGET_ENVIRONMENT: production
     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
     test:
         runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
         steps:
             - uses: actions/checkout@v3
             - name: Use Node.js ${{ matrix.node-version }}
@@ -27,9 +31,6 @@ jobs:
             - uses: ./.github/actions/build
             - uses: ./.github/actions/lint
             - uses: ./.github/actions/test
-              with:
-                  chunk_index: ${{ matrix.ci_index }}
-                  chunk_total: ${{ matrix.ci_total }}
 
     publish:
         runs-on: ubuntu-latest
